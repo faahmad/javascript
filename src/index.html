@@ -6,35 +6,55 @@
     <title>javascript</title>
   </head>
   <body>
-    <div id="rootA">
-      <div>
-        <div></div>
+    <div id="A">
+      <div id="A1">
+        <div id="A1-1"></div>
       </div>
-      <div></div>
-      <div>
-        <div>
-          <div id="nodeA"></div>
-          <div></div>
+      <div id="A2"></div>
+      <div id="A3">
+        <div id="A3-1">
+          <div id="A3-1-1"></div>
+          <div id="A3-1-2"></div>
         </div>
       </div>
     </div>
 
-    <div id="rootB">
-      <div>
-        <div></div>
+    <div id="B">
+      <div id="B1">
+        <div id="B1-1"></div>
       </div>
-      <div></div>
-      <div>
-        <div>
-          <div id="nodeB"></div>
-          <div></div>
+      <div id="B2"></div>
+      <div id="B3">
+        <div id="B3-1">
+          <div id="B3-1-1"></div>
+          <div id="B3-1-2"></div>
         </div>
       </div>
     </div>
 
     <!-- Scripts -->
-    <script type="text/javascript" src="scripts/get-symmetric-node.js"></script>
-    <script type="text/javascript" src="scripts/depth-first-search.js"></script>
-    <script type="text/javascript" src="scripts/find-element-by-id.js"></script>
+    <script
+      id="dfs"
+      type="text/javascript"
+      src="scripts/depth-first-search.js"
+    ></script>
+    <script
+      id="bfs"
+      type="text/javascript"
+      src="scripts/breadth-first-search.js"
+    ></script>
+    <script
+      id="getSymmetricNode"
+      type="text/javascript"
+      src="scripts/get-symmetric-node.js"
+    ></script>
+    <script
+      id="getElementById"
+      type="text/javascript"
+      src="scripts/find-element-by-id.js"
+    ></script>
+    <script id="invocation" type="text/javascript">
+      depthFirstSearch(document.body, (node) => console.log({ node }));
+    </script>
   </body>
 </html>
