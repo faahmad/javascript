@@ -14,7 +14,7 @@ function depthFirstSearch(root, onVisit) {
       return;
     }
     for (const child of node.children) {
-      stack.unshift(child);
+      stack.push(child);
     }
   }
   return;
