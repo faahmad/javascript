@@ -54,7 +54,11 @@
       src="scripts/find-element-by-id.js"
     ></script>
     <script id="invocation" type="text/javascript">
-      depthFirstSearch(document.body, (node) => console.log({ node }));
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          console.log(i);
+        }, 100);
+      }
     </script>
   </body>
 </html>
